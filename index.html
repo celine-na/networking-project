@@ -1,18 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Secure Website Project</title>
+    <title>Secure Network Project</title>
+
+    <!-- Monitoring -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXX');
+    </script>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>My Secure Website</h1>
+
+    <h1>Secure Website Project</h1>
+
+    <p>Enter a message:</p>
 
     <form id="form">
-        <input type="text" id="input">
+        <input type="text" id="input" placeholder="Type here">
         <button type="submit">Submit</button>
     </form>
 
     <p id="output"></p>
 
+    <!-- Performance: lazy loading -->
+    <img src="https://via.placeholder.com/300" loading="lazy">
+
     <script src="script.js"></script>
+
 </body>
 </html>
